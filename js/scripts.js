@@ -15,7 +15,6 @@ $(document).ready(function() {
 
     var result = quizCalc(number1, number2, number3);
 
-    console.log(result)
     if ( result === 0 ) {
       $("#output h2 #name").text(yourName);
       $("#output h2 #seinfeldCharacter").text("Elaine");
@@ -29,7 +28,8 @@ $(document).ready(function() {
       $("#output h2 #name").text(yourName);
       $("#output h2 #seinfeldCharacter").text("Newman");
     } else {
-      console.log("There was an error")
+      $("#output").text('Make sure you enter an integer for your age. ie: 24');
+
     }
 
 
